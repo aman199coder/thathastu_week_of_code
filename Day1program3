@@ -1,0 +1,11 @@
+a=int(input("Enter the value of a\n"))
+b=int(input("Enter the value of b\n"))
+print("Before Swapping",end="\n")
+print(a,end="\n")
+print(b,end="\n")
+a=a+b
+b=a-b
+a=a-b
+print("After Swapping",end="\n")
+print(a,end="\n")
+print(b,end="\n")
