@@ -1,0 +1,15 @@
+Score1=int(input("Enter the score of player1\n"))
+Score2=int(input("Enter the score of player2\n"))
+Score3=int(input("Enter the score of player3\n"))
+Strikerate1=Score1/0.6
+print("Strikerate of player1=",Strikerate1,end="\n")
+Strikerate2=Score2/0.6
+print("Strikerate of player2=",Strikerate2,end="\n")
+Strikerate3=Score3/0.6
+print("Strikerate of player3=",Strikerate3,end="\n")
+print("Runs scored by player1 faced 120 balls=",(2*Score1),end="\n")
+print("Runs scored by player2 faced 120 balls=",(2*Score2),end="\n")
+print("Runs scored by player3 faced 120 balls=",(2*Score3),end="\n")
+print("Maximum no of sixes hit by player 1=",(Score1//6),end="\n")
+print("Maximum no of sixes hit by player 2=",(Score2//6),end="\n")
+print("Maximum no of sixes hit by player 3=",(Score3//6),end="\n")
