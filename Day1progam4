@@ -1,0 +1,7 @@
+CP=int(input("Enter the cost price \n"))
+SP=int(input("Enter the selling price\n"))
+profit=SP-CP
+print("Profit=",profit,end="\n")
+profit=profit+0.05*(profit)
+SP=CP+profit
+print("Selling Price=",SP,end="\n")
