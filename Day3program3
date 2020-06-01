@@ -1,0 +1,7 @@
+string=input("Enter the string to remove duplicate\n")
+list1=[]
+for i in string:
+    if(i not in list1):
+        list1.append(i)
+newstring="".join(list1)
+print(newstring)
