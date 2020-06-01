@@ -1,0 +1,4 @@
+from itertools import permutations
+string=input("Enter the string\n")
+permlist=permutations(string)
+print(permlist)
