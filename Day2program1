@@ -1,0 +1,41 @@
+n=int(input("Enter the number to check odd/even,prime,palindrome,armstrong\n"))
+"""check odd or even """
+if(n%2==0):
+    print("Even Number\n")
+else:
+    print("Odd Number\n")
+""" check prime no"""
+c=0
+for i in (2,n-1):
+    if(n%i==0):
+        c=c+1
+if(c==0):
+    print("Prime Number\n")
+else:
+    print("Not a Prime Number\n")
+""" check palindrome no"""
+rev=0
+d=0
+n1=n
+while(n1>0):
+    d=n1%10
+    rev=rev*10+d
+    n1=(int)(n1/10)
+if(n==rev):
+    print("Palindrome Number\n")
+else:
+    print("Not a Palindrome Number\n")
+""" check armstrong no"""
+s=0
+d1=0
+n1=n
+while(n>0):
+    d1=n%10
+    s=s+(d1*d1*d1)
+    n=(int)(n/10)
+print(s)
+if(n1==s):
+    print("Armstrong  Number\n")
+else:
+    print("Not a Armstrong Number\n")
+
