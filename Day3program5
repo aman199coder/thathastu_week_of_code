@@ -1,0 +1,15 @@
+n1=int(input("Enter the length of list1\n"))
+list1=[]
+for i in range(0,n1):
+    element1=input()
+    list1.append(element1)
+n2=int(input("Enter the length of list2\n"))
+list2=[]
+for i in range(0,n2):
+    element2=input()
+    list1.append(element2)
+result=[]
+for i in range(0,len(list1)):
+    if list1[i] in list2:
+        result.append(list1[i])
+print(result)
