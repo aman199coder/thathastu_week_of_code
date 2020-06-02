@@ -1,1 +1,24 @@
-
+"""Dictionary"""
+words=[]
+n=int(input("Enter the value of length of dictionary"))
+for i in range(0,n):
+    element=input()
+    words.append(element)
+"""Character Array"""
+char=[]
+n=int(input("Enter the value of length of character Array"))
+for i in range(0,n):
+    element=input()
+    char.append(element)
+result=[]
+for word in words:
+    flag=True
+    for ch in range(0,len(word)):
+        if(ch in char and char.count(ch)==1 ):
+            flag=True
+        else:
+            flag=False
+            break
+    if(flag==True):
+        result.append(word) 
+print(result)   
