@@ -1,0 +1,14 @@
+tup=(12,13,1,45,65,76,3)
+n=int(input("Enter the value of no of elements in tuple"))
+list1=[]
+list2=[]
+c=1
+for i in tup:
+    if(c<=n):
+        list1.append(i)
+    else:
+        list2.append(i)
+    c=c+1
+list1.sort()
+result=tuple(list1)+tuple(list2)
+print(result)
