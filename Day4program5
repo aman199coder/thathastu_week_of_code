@@ -1,0 +1,17 @@
+list1=[]
+n=int(input("Enter the value of no of candidates"))
+for i in range(0,n):
+    element=input()
+    list1.append(element)
+set1=set(list1)
+maximum=0
+for name in set1:
+    c=list1.count(name)
+    if(c>maximum):
+        maximum=c
+counter=[]
+for name in list1:
+    if(list1.count(name)==maximum):
+        counter.append(name)
+counter.sort()
+print(counter[0])
