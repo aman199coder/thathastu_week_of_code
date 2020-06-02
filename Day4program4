@@ -1,0 +1,11 @@
+dic={}
+n=int(input("Enter the length of dictionary"))
+for i in range(0,n):
+    key=input("Enter the value of key")
+    value=input("Enter the value of corressponding key")
+    dic[key]=value
+dic2={}
+for i in dic.keys():
+    if dic[i] not in dic2.values():
+        dic2[i]=dic[i]
+print(dic2)
