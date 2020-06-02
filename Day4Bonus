@@ -14,7 +14,7 @@ result=[]
 for word in words:
     flag=True
     for ch in range(0,len(word)):
-        if(ch in char and char.count(ch)==1 ):
+        if(word[ch] in char and char.count(word[ch])==1 ):
             flag=True
         else:
             flag=False
