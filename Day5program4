@@ -1,0 +1,20 @@
+n=int(input("Enter the size of weight list and values list\n"))
+weight=[]
+for i in range(0,n):
+    element=int(input())
+    weight.append(element)
+value=[]
+for i in range(0,n):
+    element=int(input())
+    value.append(element)
+W=int(input("Enter the maximum weight\n"))
+def maxmum(W,weight,value,n):
+    if(n==0 or W==0):
+        return 0
+    if(weight[n-1]>W):
+        return maxmum(W,weight,value,n-1)
+    else:
+        return max(value(n-1)+maxmum(W-weight[n-1],weight,value,n-1),maxmum(W,weight,value,n-1))
+print(maxmum(W,weight,value,n))
+    
+        
