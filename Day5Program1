@@ -1,0 +1,11 @@
+n=int(input("Enter the number\n"))
+digit=[]
+while(n>0):
+    d=n%10
+    if(d==0):
+        d=5
+    digit.append(d)
+    n=(int)(n/10)
+digit.reverse()
+for x in (digit):
+    print(x,end="")
