@@ -1,0 +1,16 @@
+n=int(input("Enter the size of num list\n"))
+arr=[]
+even=[]
+odd=[]
+for i in range(0,n):
+    element=int(input())
+    arr.append(element)
+for num in arr:
+    if(num%2==0):
+        even.append(num)
+    else:
+        odd.append(num)
+even.sort()
+odd.sort()
+odd.reverse()
+print(even + odd)
