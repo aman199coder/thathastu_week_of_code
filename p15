@@ -1,0 +1,15 @@
+n=int(input("Enter the size of list\n"))
+list1=[]
+for i in range(0,n):
+    element=int(input())
+    list1.append(element)
+for i in range(0,n):
+    listl=[]
+    listr=[]
+    for j in range(0,i+1):
+        listl.append(list1[j])
+    for j in range(i,len(list1)):
+        listr.append(list1[j])
+    if((listl==listl.sort()) and (listr==listr.sort())):
+        break
+print(list1[i])
