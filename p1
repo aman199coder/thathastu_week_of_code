@@ -1,0 +1,17 @@
+string=input("Enter the string to check\n")
+dic={}
+for i in range(0,len(string)):
+    if(string[i] not in dic.keys()):
+        dic[string[i]]=string.count(string[i])
+print(dic)
+list1=[]
+for value in dic.values():
+    if(value%2!=0):
+        list1.append(value)
+if(len(list1)==0 or len(list1)==1):
+    print("no of char to be removed is 0",end="\n")
+else:
+    list1.sort()
+    result=sum(list1)-list1[len(list1)-1]
+    print("no of char to be removed is ",result,end="\n")
+    
