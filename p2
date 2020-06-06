@@ -1,0 +1,14 @@
+n=int(input("Enter the size of list1\n"))
+list1=[]
+for i in range(0,n):
+    element=int(input("Enter the nvalue 0 0r 1\n"))
+    list1.append(element)
+l=0
+r=n-1
+while(l<r):
+    if(list1[l]==1):
+        list1[l],list1[r]=list1[r],list1[l]
+        r=r-1
+    else:
+        l=l+1
+print(list1)
