@@ -1,0 +1,18 @@
+import math
+def checkfibonacci(number):
+    s=math.sqrt(number)
+    if(s*s==number):
+        return True
+    else:
+        return False
+n=int(input("Enter the size of list1\n"))
+list1=[]
+for i in range(0,n):
+    element=int(input())
+    list1.append(element)
+sumlist=sum(list1)
+sumlistsquare=(sumlist)*(sumlist)
+if(checkfibonacci(5*sumlistsquare+4) or checkfibonacci(5*sumlistsquare-4)):
+    print("Fibonacci Number")
+else:
+    print(" Not a Fibonacci Number")
