@@ -1,0 +1,13 @@
+n=int(input("Enter the size of list\n"))
+list1=[]
+for i in range(0,n):
+    element=(input())
+    list1.append(element)
+prefix=list1[0]
+for i in range(1,len(list1)):
+    for j in range(0,len(prefix)):
+        word=list1[i]
+        if(word[j]!=prefix[j] and prefix[j]!='\0'):
+            prefix=word[:j]
+            break
+print(prefix)
