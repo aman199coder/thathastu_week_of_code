@@ -1,0 +1,18 @@
+N=int(input("Enter the no of rows and columns\n"))
+matrix=[]
+for i in range(N):
+    matrix2=[]
+    for j in range(N):
+        element=input()
+        matrix2.append(element)
+    matrix.append(matrix2)
+def rotateMatrix(mat): 
+    for x in range(0, int(N / 2)): 
+        for y in range(x, N-x-1): 
+            temp = mat[x][y]
+            mat[x][y] = mat[y][N-1-x] 
+            mat[y][N-1-x] = mat[N-1-x][N-1-y] 
+            mat[N-1-x][N-1-y] = mat[N-1-y][x] 
+            mat[N-1-y][x] = temp 
+rotateMatrix(matrix)
+print(matrix)
